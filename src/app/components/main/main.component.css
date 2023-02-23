@@ -1,3 +1,74 @@
+main{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+img.svg{
+  transition: all 0.4s ease-in;
+}
+
+img.svg:hover{
+  transform: translateY(-7px);
+}
+
+.stick1{
+  border-left: 1px solid white;
+  position: fixed;
+  height: 100px;
+  left: 5%;
+  margin-left: 3px;
+  bottom: 0;
+}
+
+.stick1 > ul{
+  position: absolute;
+  height: 170px;
+  left: -17px;
+  bottom: 30px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.stick1 > ul > li>  a > img{
+  padding: 10px;
+}
+
+.stick2{
+  border-left: 1px solid white;
+  position: fixed;
+  height: 100px;
+  right: 5%;
+  margin-left: 3px;
+  bottom: 0;
+}
+
+.stick2 > a {
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  transition: all 0.4s ease-in;
+  position: absolute;
+  height: 170px;
+  left: -16px;
+  bottom: 100px;
+  padding: 10px;
+}
+
+.stick2 > a:hover{
+  transform: translateY(-7px);
+}
+
+#hero{
+  height: calc(100vh -41px);
+}
+
+#hero > p{
+  width: 40vw;
+}
+
 section{
   font-family: "Calibre","Inter","San Francisco","SF Pro Text",system-ui,sans-serif;
 }
@@ -16,7 +87,7 @@ section > h1,h2,h3{
 
 .bubble:hover {
   color: #64ffda;
-  /* animation: rubberBand 5s infinite; */
+  /* animation: rubberBand 1s infinite; */
   animation-name: rubberBand;
 }
 
