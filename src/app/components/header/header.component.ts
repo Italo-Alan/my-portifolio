@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ApiService } from 'src/app/api.service';
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  constructor(private api: ApiService){
+  }
+
+  // download(blob: any){
+  //   let fileURL: any = URL.createObjectURL(blob);
+  //   let b = document.createElement('b');
+  //   b.href = fileURL;
+  //   b.target = '_blank';
+  //   b.download= 'italo-cv.pdf';
+  //   b.click()
+  // }
 
 }
