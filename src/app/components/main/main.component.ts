@@ -35,11 +35,10 @@ export class MainComponent {
   firstTitle: any = "Oi,";
   secondTitle: string = "Eu sou o Italo Alan";
   thirdTitle: string = "Desenvolvedor Front End.";
-  descriptionTitle: string = "Sou um desenvolvedor Front-End que está se aventurando em Javascript, Typescript e Angular na parte do Front. Aprendendo Java para usar no Back-End. Apaixonado pelo desenvolvimento Web. Cursando Análise e Desenvolvimento de Sistemas. ";
+  descriptionTitle: string = "Meu nome é Italo Alan, tenho 26 anos e sou natural do Rio de Janeiro. Meu interesse em desenvolvimento começou em 2022 no momento que eu fiquei imaginando como algumas aplicações seriam feitas por meio de programação. Atualmente, sou um desenvolvedor Full-Stack que está se aventurando em Angular na parte do Front-End e Java na parte do Back-End. Apaixonado pelo desenvolvimento Web. Cursando Análise e Desenvolvimento de Sistemas.";
 
 
   turnArray(text: string){
-    // console.log(this.firstTitle.split(''));
     return text.split('');
   };
   turnArray2(text: string){
