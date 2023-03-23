@@ -11,13 +11,13 @@ export class HeaderComponent {
   constructor(private api: ApiService){
   }
 
-  // download(blob: any){
-  //   let fileURL: any = URL.createObjectURL(blob);
-  //   let b = document.createElement('b');
-  //   b.href = fileURL;
-  //   b.target = '_blank';
-  //   b.download= 'italo-cv.pdf';
-  //   b.click()
-  // }
+  download(blob: any){
+    let fileURL: any = URL.createObjectURL(blob);
+    let b = document.createElement('b');
+    b.href = fileURL;
+    b.target = '_blank';
+    b.download= 'italo-cv.pdf';
+    b.click()
+  }
 
 }
